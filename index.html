@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PostIt – Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="addPost.html">Add Post</a>
+        </nav>
+        <a href="login.html" class="profile-link" title="Log in">
+            <img src="images/avatar.svg" alt="User profile" class="avatar">
+        </a>
+    </header>
+
+    <div class="page-layout">
+        <aside class="sidebar sidebar-left"></aside>
+
+        <main class="feed">
+            <article class="post">
+                <header class="post-header">
+                    <img src="images/avatar.svg" alt="Author" class="avatar-small">
+                    <time datetime="2022-10-22">Oct 22, 2022</time>
+                </header>
+                <img src="images/photo1.svg" alt="Tartu town hall square" class="post-image">
+                <p>Tartu 2022</p>
+                <button type="button" class="like-button" aria-label="Like">👍</button>
+            </article>
+
+            <article class="post">
+                <header class="post-header">
+                    <img src="images/avatar.svg" alt="Author" class="avatar-small">
+                    <time datetime="2022-10-02">Oct 2, 2022</time>
+                </header>
+                <p>Anyone knows in which room is the lab today?</p>
+                <button type="button" class="like-button" aria-label="Like">👍</button>
+            </article>
+
+            <article class="post">
+                <header class="post-header">
+                    <img src="images/avatar.svg" alt="Author" class="avatar-small">
+                    <time datetime="2022-09-28">Sep 28, 2022</time>
+                </header>
+                <img src="images/photo2.svg" alt="Sunset over the Emajõgi river" class="post-image">
+                <p>Evening walk along the Emajõgi.</p>
+                <button type="button" class="like-button" aria-label="Like">👍</button>
+            </article>
+
+            <article class="post">
+                <header class="post-header">
+                    <img src="images/avatar.svg" alt="Author" class="avatar-small">
+                    <time datetime="2022-09-25">Sep 25, 2022</time>
+                </header>
+                <p>Does anyone want to form a study group for the algorithms exam?</p>
+                <button type="button" class="like-button" aria-label="Like">👍</button>
+            </article>
+
+            <article class="post">
+                <header class="post-header">
+                    <img src="images/avatar.svg" alt="Author" class="avatar-small">
+                    <time datetime="2022-09-20">Sep 20, 2022</time>
+                </header>
+                <p>The Delta building cafeteria has a new menu, the soup is great!</p>
+                <button type="button" class="like-button" aria-label="Like">👍</button>
+            </article>
+
+            <article class="post">
+                <header class="post-header">
+                    <img src="images/avatar.svg" alt="Author" class="avatar-small">
+                    <time datetime="2022-09-15">Sep 15, 2022</time>
+                </header>
+                <p>Reminder: homework #1 deadline is coming up. Don't forget to push your commits!</p>
+                <button type="button" class="like-button" aria-label="Like">👍</button>
+            </article>
+        </main>
+
+        <aside class="sidebar sidebar-right"></aside>
+    </div>
+
+    <footer class="site-footer">
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
