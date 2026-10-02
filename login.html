@@ -23,6 +23,7 @@
         body > header {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             background-color: #33333331;
             color: white;
             padding: 1rem;
@@ -57,17 +58,50 @@
         
         main {
             flex: 1;
-            padding: 2rem 1rem;
+            padding: 2rem;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-        
+            align-items: center;
         }
-        
+
+        .login-form {
+            width: min(100%, 560px);
+            display: grid;
+            gap: 1rem;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .login-form label {
+            font-weight: 600;
+        }
+
+        .login-form input:not([type="submit"]) {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            background-color: white;
+            font: inherit;
+        }
+
+        .login-form input[type="submit"] {
+            justify-self: start;
+            padding: 0.7rem 1.25rem;
+            border: 0;
+            border-radius: 4px;
+            background-color: #333;
+            color: white;
+            font: inherit;
+            cursor: pointer;
+        }
+
         footer {
             background-color: #33333331;
             color: white;
-            padding: 1rem;
+            padding: 2rem;
             text-align: center;
         }
     </style>
@@ -82,18 +116,18 @@
     </header>
     
     <main>
-        <form action="login.php" method="POST">
+        <form class="login-form" action="index.html" method="get">
             <h2>Log in</h2>
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br><br>
+            <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
+            <input type="password" id="password" name="password" required>
             <input type="submit" value="Log in">
         </form>
     </main>
 
     <footer>
-        &copy; 2024 Your Website. All rights reserved.
     </footer>
+
 </body>
 </html>

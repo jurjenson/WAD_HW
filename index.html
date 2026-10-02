@@ -10,6 +10,10 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        html {
+            background-color: #f2f2f2;
+        }
         
         body {
             display: flex;
@@ -20,23 +24,38 @@
         }
         
         header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #33333331;
             color: white;
             padding: 1rem;
-            text-align: center;
         }
         
-        header a {
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
             color: white;
             text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.5rem 1rem;
             cursor: pointer;
-            transition: opacity 0.3s;
+            border-radius: 4px;
+            transition: background-color 0.3s;
         }
         
-        header a:hover {
+        nav a:hover {
             background-color: rgba(255, 255, 255, 0.2);
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: block;
         }
         
         main {
@@ -54,8 +73,6 @@
             color: white;
             padding: 2rem;
             text-align: center;
-            margin: 0 1rem 1rem;
-            border-radius: 8px;
         }
         
         .post {
@@ -64,6 +81,12 @@
             padding: 1rem;
             margin-bottom: 1.5rem;
             background-color: #f9f9f9;
+        }
+
+        #user-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
         }
         
         .post-header {
@@ -112,18 +135,22 @@
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Home</a> | <a href="addPost.html">AddPost</a></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="addPost.html">Add Post</a>
+        </nav>
+        <a href="login.html"><img src="images/profilepicture.png" alt="Log in" class="avatar"></a>
     </header>
     
     <main>
-        <p>This is the main content area.</p>
+        <section id="user-posts" aria-label="New posts"></section>
         <article class="post">
             <div class="post-header">
                 <img src="images/profilepicture.png" alt="Profile" class="profile-pic">
                 <span class="date">Sept 23, 2026</span>
             </div>
-            <img src="images/post-image.jpg" alt="Post image" class="post-image">
-            <p>text</p>
+            <img src="images/postimage.jpg" alt="Post image" class="post-image">
+            <p>Golden hour walk with Troy and Sophie! ૮ ˶ᵔ ᵕ ᵔ˶ ა 𐙚 ‧₊˚ ⋅</p>
             
             <div class="post-reactions">
                 <button>👍 Like</button>
@@ -136,7 +163,45 @@
                 <img src="images/profilepicture.png" alt="Profile" class="profile-pic">
                 <span class="date">Sept 19, 2026</span>
             </div>
-            <p>Test text</p></h1>
+            <p>trolley problem: nobody is in any danger. do you jump in front of the moving trolley</p>
+            <div class="post-reactions">
+                <button>👍 Like</button>
+                <button>💬 Comment</button>
+            </div>
+        </article>
+
+        <article class="post">
+            <div class="post-header">
+                <img src="images/profilepicture.png" alt="Profile" class="profile-pic">
+                <span class="date">Sept 17, 2026</span>
+            </div>
+            <p>yip yap yop siia mingit teksti vaja</p>
+            <div class="post-reactions">
+                <button>👍 Like</button>
+                <button>💬 Comment</button>
+            </div>
+        </article>
+
+        <article class="post">
+            <div class="post-header">
+                <img src="images/profilepicture.png" alt="Profile" class="profile-pic">
+                <span class="date">Sept 15, 2026</span>
+            </div>
+            <img src="images/hampter.jpg" alt="A golden hour walk" class="post-image">
+            <p>bought this memecoin 💯</p>
+            <div class="post-reactions">
+                <button>👍 Like</button>
+                <button>💬 Comment</button>
+            </div>
+        </article>
+
+        <article class="post">
+            <div class="post-header">
+                <img src="images/profilepicture.png" alt="Profile" class="profile-pic">
+                <span class="date">Sept 12, 2026</span>
+            </div>
+            <img src="images/biscuit.jpg" alt="A golden hour walk" class="post-image">
+            <p>took Biscuit to the vet 👍 </p>
             <div class="post-reactions">
                 <button>👍 Like</button>
                 <button>💬 Comment</button>
@@ -146,5 +211,6 @@
     
     <footer>
     </footer>
+
 </body>
 </html>

@@ -20,6 +20,8 @@
         }
         
         body > header {
+            display: flex;
+            align-items: center;
             background-color: #33333331;
             color: white;
             padding: 1rem;
@@ -60,7 +62,47 @@
             justify-content: center;
             align-items: center;
         }
-        
+
+        .post-form {
+            width: min(100%, 560px);
+            display: grid;
+            gap: 1rem;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .post-form label {
+            font-weight: 600;
+        }
+
+        .post-form input[type="file"],
+        .post-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            background-color: white;
+            font: inherit;
+        }
+
+        .post-form textarea {
+            min-height: 140px;
+            resize: none;
+        }
+
+        .post-form button {
+            justify-self: start;
+            padding: 0.7rem 1.25rem;
+            border: 0;
+            border-radius: 4px;
+            background-color: #333;
+            color: white;
+            font: inherit;
+            cursor: pointer;
+        }
+
         footer {
             background-color: #33333331;
             color: white;
@@ -79,11 +121,18 @@
     </header>
     
     <main>
-        <p>Add a new post here.</p>
+        <form class="post-form" action="index.html" method="get">
+            <h2>Create a post</h2>
+            <label for="post-image">Photo</label>
+            <input id="post-image" type="file" accept="image/*">
+            <label for="post-text">Caption</label>
+            <textarea id="post-text" maxlength="500" placeholder="Write a caption..."></textarea>
+            <button type="submit">Post</button>
+        </form>
     </main>
     
     <footer>
-        <p>&copy; 2026. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
