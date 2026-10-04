@@ -71,7 +71,8 @@
 
         .post-form {
             width: min(100%, 560px);
-            display: grid;
+            display: flex;
+            flex-direction: column;
             gap: 1rem;
             padding: 1.5rem;
             border: 1px solid #ddd;
@@ -99,7 +100,7 @@
         }
 
         .post-form button {
-            justify-self: start;
+            align-self: flex-start;
             padding: 0.7rem 1.25rem;
             border: 0;
             border-radius: 4px;
@@ -114,6 +115,21 @@
             color: white;
             padding: 2rem;
             text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body > header {
+                gap: 0.5rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+            
+            main {
+                padding: 1rem;
+            }
         }
     </style>
 </head>

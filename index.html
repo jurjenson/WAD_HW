@@ -64,6 +64,7 @@
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
+            width: 100%;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -79,7 +80,6 @@
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 1rem;
-            margin-bottom: 1.5rem;
             background-color: #f9f9f9;
         }
 
@@ -139,7 +139,21 @@
         .post-header ~ p { 
             line-height: 1.5; 
         } 
-        
+
+        @media (max-width: 600px) {
+            main {
+                padding: 1rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+
+            .post-reactions button {
+                flex: 1;
+            }
+        }
     </style>
 </head>
 <body>
@@ -150,7 +164,7 @@
         </nav>
         <a href="login.html"><img src="images/profilepicture.png" alt="Log in" class="avatar"></a>
     </header>
-    
+
     <main>
         <section id="user-posts" aria-label="New posts"></section>
         <article class="post">
@@ -217,7 +231,6 @@
             </div>
         </article>
     </main>
-    
     <footer>
     </footer>
 
