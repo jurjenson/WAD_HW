@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "author": "Annabel",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-23",
+    "text": "Golden hour walk with Troy and Sophie.",
+    "postImage": "images/postimage.jpg"
+  },
+  {
+    "id": 2,
+    "author": "Heleri",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-19",
+    "text": "trolley problem: nobody is in any danger. do you jump in front of the moving trolley",
+    "postImage": null
+  },
+  {
+    "id": 3,
+    "author": "Annabel",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-17",
+    "text": "\"My unmatched perspicacity coupled with sheer indefatigability makes me a feared opponent in any realm of human endeavor\" 🥷",
+    "postImage": null
+  },
+  {
+    "id": 4,
+    "author": "Heleri",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-15",
+    "text": "bought this memecoin 💯",
+    "postImage": "images/hampter.jpg"
+  },
+  {
+    "id": 5,
+    "author": "Annabel",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-12",
+    "text": "took Biscuit to the vet 👍",
+    "postImage": "images/biscuit.jpg"
+  },
+
+  {
+    "id": 6,
+    "author": "Annabel",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-10",
+    "text": "",
+    "postImage": null
+  },
+
+  {
+    "id": 7,
+    "author": "Annabel",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-12",
+    "text": "took Biscuit to the vet 👍",
+    "postImage": "images/biscuit.jpg"
+  },
+
+  {
+    "id": 8,
+    "author": "Annabel",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-12",
+    "text": "took Biscuit to the vet 👍",
+    "postImage": "images/biscuit.jpg"
+  },
+
+  {
+    "id": 9,
+    "author": "Annabel",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-12",
+    "text": "took Biscuit to the vet 👍",
+    "postImage": "images/biscuit.jpg"
+  },
+
+  {
+    "id": 10,
+    "author": "Annabel",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-12",
+    "text": "took Biscuit to the vet 👍",
+    "postImage": "images/biscuit.jpg"
+  },
+
+  {
+    "id": 11,
+    "author": "Annabel",
+    "authorImage": "images/profilepicture.png",
+    "createTime": "2026-09-12",
+    "text": "took Biscuit to the vet 👍",
+    "postImage": "images/biscuit.jpg"
+  }
+
+
+]
