@@ -45,7 +45,7 @@
     "author": "Annabel",
     "authorImage": "images/profilepicture.png",
     "createTime": "2026-09-10",
-    "text": "",
+    "text": "git commit -m \"i quit\"",
     "postImage": null
   },
 
@@ -54,45 +54,37 @@
     "author": "Annabel",
     "authorImage": "images/profilepicture.png",
     "createTime": "2026-09-12",
-    "text": "took Biscuit to the vet 👍",
-    "postImage": "images/biscuit.jpg"
+    "text": "Sophie with a pretty flower",
+    "postImage": "images/sophie.jpg"
   },
 
   {
     "id": 8,
     "author": "Annabel",
     "authorImage": "images/profilepicture.png",
-    "createTime": "2026-09-12",
-    "text": "took Biscuit to the vet 👍",
-    "postImage": "images/biscuit.jpg"
+    "createTime": "2026-08-20",
+    "text": "Fun day at the zoo today",
+    "postImage": "images/polarber.jpg"
   },
 
   {
     "id": 9,
     "author": "Annabel",
     "authorImage": "images/profilepicture.png",
-    "createTime": "2026-09-12",
-    "text": "took Biscuit to the vet 👍",
-    "postImage": "images/biscuit.jpg"
+    "createTime": "2026-08-16",
+    "text": "im so righty tighty lefty loosy",
+    "postImage": null
   },
 
   {
     "id": 10,
     "author": "Annabel",
     "authorImage": "images/profilepicture.png",
-    "createTime": "2026-09-12",
-    "text": "took Biscuit to the vet 👍",
-    "postImage": "images/biscuit.jpg"
+    "createTime": "2026-07-02",
+    "text": "made some banging tomato soup👍",
+    "postImage": "images/supp.jpg"
   },
 
-  {
-    "id": 11,
-    "author": "Annabel",
-    "authorImage": "images/profilepicture.png",
-    "createTime": "2026-09-12",
-    "text": "took Biscuit to the vet 👍",
-    "postImage": "images/biscuit.jpg"
-  }
 
 
 ]
