@@ -60,7 +60,8 @@ function createPost(post) {
 
 }
 
-fetch(POSTS_URL)
+// Task 4 
+/* fetch(POSTS_URL)
     .then(response => {
       if (!response.ok) {
           throw new Error("HTTP error " + response.status);
@@ -71,5 +72,21 @@ fetch(POSTS_URL)
         const container = document.getElementById("user-posts");
         //JSONBin wraps array in record (thats why data.record)
         data.record.forEach(post => container.append(createPost(post)));
+    })
+    .catch(error => console.error("Could not load posts:", error));
+*/ 
+
+// Task 5
+fetch("posts.json")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+        }
+        return response.json();
+    })
+    .then(posts => {
+        const container = document.getElementById("user-posts");
+        // The local file is a plain array, so there's no .record here
+        posts.forEach(post => container.append(createPost(post)));
     })
     .catch(error => console.error("Could not load posts:", error));
