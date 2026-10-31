@@ -32,6 +32,8 @@ function createPost(post) {
     // Post image if the post has one
     if (post.postImage) {
         const image = document.createElement("img");
+        // Task 6: JSON can only store text, so each post stores the image's path as a string. 
+        // The browser then loads the actual photo file from the images/ folder using that path.
         image.src = post.postImage;
         image.alt = "Post image";
         image.className = "post-image";
