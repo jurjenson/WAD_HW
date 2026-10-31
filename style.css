@@ -44,57 +44,6 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: block;
-}
-
-.avatar {
-    cursor: pointer;
-}
-
-.user-menu {
-    position: relative;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    background-color: white;
-    color: black;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
-    z-index: 1000;
-}
-
-.dropdown.open {
-    display: block;
-}
-.dropdown p { 
-    margin-bottom: 4px; 
-}
-.dropdown-name { 
-    font-weight: bold; 
-}
-.dropdown-email { 
-    color: #666; font-size: 0.9rem; 
-}
-.dropdown hr { 
-    border: none; border-top: 1px solid #ddd; margin: 10px 0; 
-}
-.dropdown-logout { 
-    color: #d93025; text-decoration: none; font-weight: bold; 
-}
-.dropdown-logout:hover { 
-    text-decoration: underline; 
-}
-
 main {
     flex: 1;
     padding: 2rem;

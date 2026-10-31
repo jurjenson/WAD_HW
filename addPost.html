@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Post</title>
+    <link rel="stylesheet" href="profile-menu.css">
     <style>
         * {
             margin: 0;
@@ -54,13 +55,6 @@
             border-radius: 0 4px 4px 0;
         }
 
-        .avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: block;
-        }
-        
         main {
             flex: 1;
             display: flex;
@@ -139,7 +133,15 @@
             <a href="index.html">Home</a>
             <a href="addPost.html">Add Post</a>
         </nav>
-        <a href="login.html"><img src="images/profilepicture.png" alt="Log in" class="avatar"></a>
+        <div class="user-menu">
+            <img id="nav-avatar" class="avatar" src="images/profilepicture.png" alt="My profile">
+            <div id="dropdown" class="dropdown">
+                <p class="dropdown-name">Your Name</p>
+                <p class="dropdown-email">your.name@example.com</p>
+                <hr>
+                <a href="login.html" class="dropdown-logout">Log out</a>
+            </div>
+        </div>
     </header>
     
     <main>
@@ -155,6 +157,6 @@
     
     <footer>
     </footer>
-
+    <script src="profile-menu.js" defer></script>
 </body>
 </html>
