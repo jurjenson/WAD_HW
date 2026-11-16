@@ -80,7 +80,7 @@ function createPost(post) {
 
 // Task 5
 fetch("posts.json")
-    .then(response => {
+    .then(response => { // Makes a promise
         if (!response.ok) {
             throw new Error("HTTP error " + response.status);
         }
