@@ -8,6 +8,11 @@
     <img v-if="post.postImage" :src="post.postImage" alt="Post image" class="post-image">
 
     <p>{{ post.text }}</p>
+
+    <div class="post-reactions">
+        <button @click="like">👍 Like</button>
+        <span class="likes">{{ post.likes }} likes</span>
+    </div>
   </article>
 </template>
 
@@ -22,10 +27,16 @@ export default {
     post() {
       return this.$store.getters.getPostById(this.id)
     },
+
     formattedDate() {
       return new Date(this.post.createTime).toLocaleDateString('en-US', {
         month: 'short', day: 'numeric', year: 'numeric'
       })
+    }
+  },
+  methods: {
+    like() {
+        this.$store.commit('incrementLikes', this.id)
     }
   }
 }
@@ -65,5 +76,28 @@ export default {
 
 p {
   line-height: 1.5;
+}
+
+.post-reactions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.post-reactions button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #d8e4ff;
+  cursor: pointer;
+}
+
+.post-reactions button:hover {
+  background-color: #c2d4ff;
+}
+
+.likes {
+  color: #555;
 }
 </style>

@@ -11,6 +11,10 @@ export default createStore({
   mutations: {
     setPosts(state, posts) {
       state.posts = posts
+    },
+    incrementLikes(state, id) {
+        const post = state.posts.find(post => post.id === id)
+        if (post) post.likes++
     }
   },
   actions: {
