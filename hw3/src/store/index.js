@@ -15,6 +15,11 @@ export default createStore({
     incrementLikes(state, id) {
         const post = state.posts.find(post => post.id === id)
         if (post) post.likes++
+    },
+    resetLikes(state) {
+      state.posts.forEach(post => {
+         post.likes = 0
+      })
     }
   },
   actions: {
