@@ -65,6 +65,7 @@ export default {
   display: flex;
   justify-content: center;
   padding: 30px 16px;
+  flex: 1;
 }
 
 .signup-form {
