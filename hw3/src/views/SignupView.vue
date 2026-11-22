@@ -60,3 +60,72 @@ export default {
   },
 };
 </script>
+<style scoped>
+.signup {
+  display: flex;
+  justify-content: center;
+  padding: 30px 16px;
+}
+
+.signup-form {
+  width: 100%;
+  max-width: 380px;
+  background: #eef3e2;
+  padding: 20px 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.row label {
+  width: 75px;
+  text-align: right;
+}
+
+.row input {
+  flex: 1;
+  padding: 7px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.errors {
+  color: #c0392b;
+  font-size: 14px;
+}
+
+.errors p {
+  margin: 0;
+}
+
+.errors ul {
+  margin: 4px 0 0;
+  padding-left: 20px;
+}
+
+.success {
+  color: green;
+  margin: 0;
+}
+
+button {
+  align-self: center;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 15px;
+  background: #8fb0e0;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6f95d0;
+}
+</style>
