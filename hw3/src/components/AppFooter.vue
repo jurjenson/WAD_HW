@@ -21,7 +21,7 @@ footer {
     background-color: #333;
     color: white;
     padding: 1.5rem;
-    text.align: center;
+    text-align: center;
     line-height: 1.6;
 }
 </style>
